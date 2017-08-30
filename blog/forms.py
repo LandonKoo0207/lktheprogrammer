@@ -9,7 +9,7 @@ class LoginForm(AuthenticationForm):
     password = forms.CharField(label="Password", max_length=30, widget=forms.PasswordInput(attrs={'class': 'form-control', 'name': 'password'}))
 
 class PostForm(forms.ModelForm):
-    title = forms.CharField(max _length=50, required=True)
+    title = forms.CharField(max_length=50, required=True)
     category = forms.ChoiceField(choices=[x for x in Category.objects.all()], required=True)
     contents = forms.CharField(widget=TinyMCE(), required=True)
     time_updated = forms.DateTimeField(widget=forms.HiddenInput())
