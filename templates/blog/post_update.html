@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+
+{% block body %}
+	<script>
+		function confirmCancel() {
+			var ans = confirm("Are you sure to exit? (any unsaved contents will be lost)");
+			if (ans === true) {
+				location.href="/";
+			}
+		}
+
+		function confirmDelete(id) {
+			var ans = confirm("Are you sure to delete this post? (The post will not be recovered)");
+			if (ans === true) {
+				location.href="/delete/"+id;
+			}
+		}
+
+		function submitForm(id) {
+			$('#update-form').submit(function(event) {
+				event.preventDefault();
+				var frm = $(this);
+				var posting = $.post(frm.attr('action'), frm.serialize() );
+
+				posting.done(function(data) {
+					location.href="/update/"+id;
+				});
+			});
+		}
+
+
+	</script>
+	<div id="update-page" class="col-sm-9">
+		<form id="update-form" action="{% url 'post_update' pk=object.pk %}" method="post" class="fm-create">
+			{% csrf_token %}
+			{{ form.media }}
+			<table class="create-category">
+			<tr>
+				<td class="category-label">
+					Category:
+				</td>
+				<td class="category-dropdown">
+					{{form.category|add_class:'form-control'}}
+				</td>
+			</tr>
+			</table>
+			<div class="fm-title">
+			{{form.title|add_class:'form-title'|attr:"placeholder:The Post Title Here"}}
+			<button class="btn btn-primary" type="submit" id="update-btn" onclick="submitForm({{post.id}})">Update</button>
+			<button class="btn btn-warning" type="button" tabindex="-1" onclick="confirmCancel();">Cancel</button>
+			<button class="btn btn-danger" type="button" tabindex="-1" onclick="confirmDelete({{post.id}});">Delete</button>
+			<!-- <hr class="create-title-separator"> -->
+			</div>
+			<div class="fm-contents">
+			{{form.contents|add_class:'form-contents'}}
+			</div>
+		</form>
+		</div>
+	<script>
+		window.onbeforeunload = function() {
+			console.log("hey")
+		}
+	</script>
+{% endblock %} 

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+{% block body %}
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+{% if next %}
+  {% if user.is_authenticated %}
+  <p> Your account doesn't have access to this page.</p>
+  {% else %}
+  <p> Please login to see this page.</p>
+  {% endif %}
+{% endif %}
+<div class="jumbotron">
+  <div class="admin-login">
+    <h2 class="display-5">Admin Login</h2>
+    <hr class="my-3" id="login-hr">
+    <form method="post" action="{% url 'login' %}">
+      {% csrf_token %}
+      <table id="login-table">
+        <tr>
+          <td>{{ form.username.label_tag }}</td>
+          <td>{{ form.username }}</td>
+        </tr>
+        <tr>
+          <td>{{ form.password.label_tag }}</td>
+          <td>{{ form.password }}</td>
+        </tr>
+        
+      </table>
+      <div class="login-buttons">
+          <button type="submit" class="btn btn-primary" id="login-btn" >Login</button>
+          <button id="cancel-btn" type="button" class="btn btn-warning" onclick="location.href='/'"/>Cancel</button>
+          <input type="hidden" name="next" value="{{ next }}" />
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
