@@ -136,7 +136,7 @@ STATICFILES_DIRS = [
 LOGIN_REDIRECT_URL = '/'
 
 TINYMCE_DEFAULT_CONFIG = {
-    'width': 900,
+    'width': "900px",
     'plugins': "table,spellchecker,paste,searchreplace",
     'theme': "modern",
     'cleanup_on_startup': True,
