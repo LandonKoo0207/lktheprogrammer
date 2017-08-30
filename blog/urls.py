@@ -8,5 +8,4 @@ urlpatterns = [
     url(r'^create/$', views.PostCreateView.as_view(success_url="/blog"), name='post_create'),
     url(r'^update/(?P<pk>\d+)/$', views.PostUpdateView.as_view(), name='post_update'),
     url(r'^delete/(?P<id>\d+)/$', views.PostDeleteView, name="post_delete"),
-    url(r'^froala_editor/', include('froala_editor.urls')),
 ]
