@@ -23,5 +23,4 @@ urlpatterns = [
     url(r'^', include('blog.urls')),
     url(r'^login/$', views.login, {'template_name': 'login.html', 'authentication_form': LoginForm}, name="login"),
     url(r'^logout/$', views.logout, {'next_page': '/'}),
-    url(r'^froala_editor/', include('froala_editor.urls')),
 ]

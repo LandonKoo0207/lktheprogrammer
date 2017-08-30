@@ -2,7 +2,7 @@ from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.timezone import now
 from datetime import datetime
-from froala_editor import fields
+from tinymce.models import HTMLField
 from bs4 import BeautifulSoup
 
 class Category(models.Model):
@@ -15,7 +15,7 @@ class Category(models.Model):
 class Post(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=200)
-    contents = fields.FroalaField()
+    contents = HTMLField()
     category = models.ForeignKey(Category)
     time_updated = models.DateTimeField(default=now)
 

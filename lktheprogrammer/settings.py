@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bs4',
-    'froala_editor',
+    'tinymce',
     'widget_tweaks',
     'blog',
 ]
