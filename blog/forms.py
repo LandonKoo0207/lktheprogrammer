@@ -2,7 +2,6 @@ from django.contrib.auth.forms import AuthenticationForm
 from django import forms
 from .models import Post, Category
 from datetime import datetime
-#from ckeditor.widgets import CKEditorWidget
 from froala_editor.widgets import FroalaEditor
 
 class LoginForm(AuthenticationForm):

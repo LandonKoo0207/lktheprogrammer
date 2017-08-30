@@ -2,7 +2,6 @@ from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.timezone import now
 from datetime import datetime
-#from ckeditor import fields
 from froala_editor import fields
 from bs4 import BeautifulSoup
 
