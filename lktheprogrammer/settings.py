@@ -139,7 +139,7 @@ TINYMCE_JS_ROOT = os.path.join(BASE_DIR, 'static/django_tinymce')
 
 TINYMCE_DEFAULT_CONFIG = {
     'plugins': "table",
-    'theme': "advanced",
+    #'theme': "advanced",
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 10,
     'width': 900,
