@@ -138,7 +138,11 @@ LOGIN_REDIRECT_URL = '/'
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, 'static/django_tinymce')
 
 TINYMCE_DEFAULT_CONFIG = {
-    'plugins': "table,spellchecker,paste,searchreplace",
+    'plugins': [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code'
+    ],
     'theme': "advanced",
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 10,
