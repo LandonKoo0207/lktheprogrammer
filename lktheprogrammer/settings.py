@@ -135,7 +135,7 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = '/'
 
-TINYMCE_JS_URL = os.path.join(BASE_DIR, 'static/tiny_mce/tiny_mce_src.js')
+TINYMCE_JS_URL = os.path.join(MEDIA_URL, 'static/tiny_mce/tiny_mce.js')
 
 TINYMCE_DEFAULT_CONFIG = {
     'plugins': "table",
