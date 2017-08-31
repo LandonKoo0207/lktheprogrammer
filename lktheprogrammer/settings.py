@@ -137,7 +137,7 @@ LOGIN_REDIRECT_URL = '/'
 
 TINYMCE_DEFAULT_CONFIG = {
     'plugins': "table,spellchecker,paste,searchreplace",
-    'theme': "lnlite",
+    'theme': "modern",
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 10,
 }
