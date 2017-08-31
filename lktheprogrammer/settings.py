@@ -135,6 +135,8 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = '/'
 
+TINYMCE_JS_ROOT = os.path.join(BASE_DIR, 'static/django_tinymce')
+
 TINYMCE_DEFAULT_CONFIG = {
     'plugins': "table,spellchecker,paste,searchreplace",
     'theme': "advanced",
