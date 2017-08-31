@@ -135,20 +135,11 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = '/'
 
-#TINYMCE_JS_URL = os.path.join(MEDIA_URL, 'static/tiny_mce/tiny_mce.js')
-
-TINYMCE_DEFAULT_CONFIG = {
-    'plugins': "table",
-    #'theme': "advanced",
-    'cleanup_on_startup': True,
-    'custom_undo_redo_levels': 10,
-    'width': 900,
-    'height': 500,
-}
-
-# CKEDITOR_CONFIGS = {
-#     'default': {
-#         'toolbar': 'full',
-#         'width': '100%',
-#     },
+# TINYMCE_DEFAULT_CONFIG = {
+#     'plugins': "table",
+#     #'theme': "advanced",
+#     'cleanup_on_startup': True,
+#     'custom_undo_redo_levels': 10,
+#     'width': 900,
+#     'height': 500,
 # }
