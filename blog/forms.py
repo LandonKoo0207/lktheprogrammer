@@ -11,11 +11,7 @@ class LoginForm(AuthenticationForm):
 class PostForm(forms.ModelForm):
     title = forms.CharField(max_length=50, required=True)
     category = forms.ChoiceField(choices=[x for x in Category.objects.all()], required=True)
-    contents = forms.CharField(widget=TinyMCE(attrs={'selector': 'textarea', 'height': '500', 'menubar': 'false', 'plugins': [
-    'advlist autolink lists link image charmap print preview anchor',
-    'searchreplace visualblocks code fullscreen',
-    'insertdatetime media table contextmenu paste code'
-  ]}), required=True)
+    contents = forms.CharField(widget=TinyMCE(), required=True)
     time_updated = forms.DateTimeField(widget=forms.HiddenInput())
 
     class Meta:
