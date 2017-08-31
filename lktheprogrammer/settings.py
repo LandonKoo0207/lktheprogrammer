@@ -135,11 +135,13 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = '/'
 
-# TINYMCE_DEFAULT_CONFIG = {
-#     'plugins': "table",
-#     #'theme': "advanced",
-#     'cleanup_on_startup': True,
-#     'custom_undo_redo_levels': 10,
-#     'width': 900,
-#     'height': 500,
-# }
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': "table,spellchecker,paste,searchreplace",
+    'theme': "advanced",
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 10,
+    'width': 1000,
+    'height': 700,
+}
+TINYMCE_SPELLCHECKER = True
+TINYMCE_COMPRESSOR = True
