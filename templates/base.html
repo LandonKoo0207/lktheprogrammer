@@ -69,7 +69,7 @@
 		{% if user.is_authenticated %}
 			<button id="admin-btn" class="btn btn-primary" onclick="location.href='/create'">Create Post(Admin)</button>
 
-		  <a class="nav-link href="/logout">Logout</a>
+		  <a class="nav-link" href="/logout">Logout</a>
 		{% else %}
 		  <a class="nav-link" href="/login" id="admin-label">Admin Login</a>
 		{% endif %}
