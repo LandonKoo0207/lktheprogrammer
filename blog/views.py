@@ -35,7 +35,6 @@ class PostUpdateView(UpdateView):
 
     template_name_suffix = '_update'
 
-@login_required
 def PostDeleteView(request, id):
     post_to_delete = get_object_or_404(Post, pk=id).delete()
 
