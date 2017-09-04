@@ -66,22 +66,13 @@
 	{% block body %}
 	{% endblock %}
 	<footer>
-		<div class="collapse navbar-collapse">
-		<ul class="navbar-nav mr-auto">
 		{% if user.is_authenticated %}
-		<li class="nav-item">
 			<button id="admin-btn" class="btn btn-primary" onclick="location.href='/create'">Create Post(Admin)</button>
-		</li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="/logout">Logout</a>
-		  </li>
+
+		  <a class="nav-link href="/logout">Logout</a>
 		{% else %}
-		  <li class="nav-item">
-		    <a class="nav-link" href="/login" id="admin-label">Admin Login</a>
-		  </li>
+		  <a class="nav-link" href="/login" id="admin-label">Admin Login</a>
 		{% endif %}
-		</ul>
-		</div>
 	</footer>
 </body>
 </html>
