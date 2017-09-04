@@ -66,6 +66,7 @@
 	{% block body %}
 	{% endblock %}
 	<footer>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 		{% if user.is_authenticated %}
 		<li class="nav-item">
@@ -80,6 +81,7 @@
 		  </li>
 		{% endif %}
 		</ul>
+		</div>
 	</footer>
 </body>
 </html>
