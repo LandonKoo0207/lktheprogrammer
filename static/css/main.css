@@ -37,8 +37,8 @@ div.admin-login
 
 div.container#main-nav
 {
-	padding-left: auto;
-	padding-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 div.fm-contents
