@@ -35,12 +35,12 @@ div.admin-login
 	text-align: center;
 }
 
-div.container#main-nav
+/*div.container#main-nav
 {
 	margin-left: auto;
 	margin-right: auto;
 }
-
+*/
 div.container#main-footer
 {
 	margin-left: auto;
