@@ -66,6 +66,7 @@
 	{% block body %}
 	{% endblock %}
 	<footer>
+		<ul class="navbar-nav mr-auto">
 		{% if user.is_authenticated %}
 		<li class="nav-item">
 			<button id="admin-btn" class="btn btn-primary" onclick="location.href='/create'">Create Post(Admin)</button>
