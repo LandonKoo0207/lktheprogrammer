@@ -1,4 +1,4 @@
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, CreateView, UpdateView
 from django.http import HttpResponseRedirect
@@ -21,14 +21,14 @@ class PostListView(ListView):
     context_object_name = 'posts'
     queryset = Post.objects.all()
 
-@login_required
-class PostCreateView(CreateView):
+class PostCreateView(LoginRequiredMixin, CreateView):
+    login_url = '/login/'
+    redirect_field_name = 'redirect_to'
     model = Post
     fields = ['title', 'contents', 'category']
 
     template_name_suffix = '_create'
 
-@login_required
 class PostUpdateView(UpdateView):
     model = Post
     fields = ['title', 'contents', 'category']
