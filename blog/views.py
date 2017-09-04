@@ -20,18 +20,21 @@ class PostListView(ListView):
     context_object_name = 'posts'
     queryset = Post.objects.all()
 
+@login_required
 class PostCreateView(CreateView):
     model = Post
     fields = ['title', 'contents', 'category']
 
     template_name_suffix = '_create'
 
+@login_required
 class PostUpdateView(UpdateView):
     model = Post
     fields = ['title', 'contents', 'category']
 
     template_name_suffix = '_update'
 
+@login_required
 def PostDeleteView(request, id):
     post_to_delete = get_object_or_404(Post, pk=id).delete()
 
