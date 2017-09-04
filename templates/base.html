@@ -55,18 +55,6 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="/blog">Blog</a>
 		      </li>
-		      {% if user.is_authenticated %}
-		      <li class="nav-item">
-		      	<button id="admin-btn" class="btn btn-primary" onclick="location.href='/create'">Create Post(Admin)</button>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="/logout">Logout</a>
-		      </li>
-		      {% else %}
-		      <li class="nav-item">
-		        <a class="nav-link" href="/login" id="admin-label">Admin Login</a>
-		      </li>
-		      {% endif %}
 		    </ul>
 		    <!-- <form class="form-inline my-2 my-lg-0">
 		      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -77,5 +65,19 @@
 	</nav>
 	{% block body %}
 	{% endblock %}
+	<footer>
+		{% if user.is_authenticated %}
+		<li class="nav-item">
+			<button id="admin-btn" class="btn btn-primary" onclick="location.href='/create'">Create Post(Admin)</button>
+		</li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="/logout">Logout</a>
+		  </li>
+		{% else %}
+		  <li class="nav-item">
+		    <a class="nav-link" href="/login" id="admin-label">Admin Login</a>
+		  </li>
+		{% endif %}
+	</footer>
 </body>
 </html>
