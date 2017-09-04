@@ -29,13 +29,17 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
     template_name_suffix = '_create'
 
-class PostUpdateView(UpdateView):
+class PostUpdateView(LoginRequiredMixin, UpdateView):
+    login_url = '/login/'
+    redirect_field_name = 'redirect_to'
     model = Post
     fields = ['title', 'contents', 'category']
 
     template_name_suffix = '_update'
 
-def PostDeleteView(request, id):
+def PostDeleteView(LoginRequiredMixin, request, id):
+    login_url = '/login/'
+    redirect_field_name = 'redirect_to'
     post_to_delete = get_object_or_404(Post, pk=id).delete()
 
     return HttpResponseRedirect('/blog')
