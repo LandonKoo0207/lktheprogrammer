@@ -90,6 +90,11 @@ div > form#update-form
 	margin-right: auto;
 }
 
+footer.main-footer
+{
+	text-align: center;
+}
+
 hr.create-title-separator
 {
 	margin-left: 0px;

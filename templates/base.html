@@ -65,7 +65,7 @@
 	</nav>
 	{% block body %}
 	{% endblock %}
-	<footer>
+	<footer class="main-footer">
 		{% if user.is_authenticated %}
 			<button id="admin-btn" class="btn btn-primary" onclick="location.href='/create'">Create Post(Admin)</button>
 
