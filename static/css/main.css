@@ -41,6 +41,12 @@ div.container#main-nav
 	margin-right: auto;
 }
 
+div.container#main-footer
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 div.fm-contents
 {
 	margin-top: 15px;
@@ -86,13 +92,6 @@ div#post-content
 
 div > form#update-form
 {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-footer.main-footer
-{
-	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }

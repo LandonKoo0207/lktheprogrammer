@@ -65,14 +65,16 @@
 	</nav>
 	{% block body %}
 	{% endblock %}
-	<footer class="main-footer">
-		{% if user.is_authenticated %}
-			<button id="admin-btn" class="btn btn-primary" onclick="location.href='/create'">Create Post(Admin)</button>
+	<div class="container" id="main-footer">
+		<footer>
+			{% if user.is_authenticated %}
+				<button id="admin-btn" class="btn btn-primary" onclick="location.href='/create'">Create Post(Admin)</button>
 
-		  <a href="/logout">Logout</a>
-		{% else %}
-		  <a href="/login" id="admin-label">Admin Login</a>
-		{% endif %}
-	</footer>
+			  <a href="/logout">Logout</a>
+			{% else %}
+			  <a href="/login" id="admin-label">Admin Login</a>
+			{% endif %}
+		</footer>
+	</div>
 </body>
 </html>
