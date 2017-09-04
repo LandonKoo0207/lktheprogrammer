@@ -37,9 +37,8 @@ div.admin-login
 
 div.container#main-nav
 {
-	text-align: center;
-	align-content: center;
-	background-color: #AAAAAA;
+	padding-left: auto;
+	padding-right: auto;
 }
 
 div.fm-contents
