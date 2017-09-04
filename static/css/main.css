@@ -35,6 +35,11 @@ div.admin-login
 	text-align: center;
 }
 
+div.container#main-nav
+{
+	text-align: center;
+}
+
 div.fm-contents
 {
 	margin-top: 15px;
