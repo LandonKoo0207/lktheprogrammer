@@ -38,6 +38,8 @@ div.admin-login
 div.container#main-nav
 {
 	text-align: center;
+	align-content: center;
+	background-color: #AAAAAA;
 }
 
 div.fm-contents
