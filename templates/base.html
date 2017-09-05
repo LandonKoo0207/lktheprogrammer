@@ -35,7 +35,9 @@
 		    '//www.tinymce.com/css/codepen.min.css'
 		  ] });
 
-			if(window.closed) { alert("Bye now!"); };
+			window.onbeforeunload = function(event) {
+    		event.returnValue = "Write something clever here..";
+			};
 			</script>
 	{% endblock %}
 </head>
