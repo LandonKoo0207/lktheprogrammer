@@ -33,7 +33,12 @@
 		  content_css: [
 		    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
 		    '//www.tinymce.com/css/codepen.min.css'
-		  ] });</script>
+		  ] });
+
+			window.onunload = function() {
+				location.href = "/logout";
+			}
+			</script>
 	{% endblock %}
 </head>
 <body>
@@ -66,11 +71,6 @@
 	</nav>
 	{% block body %}
 	{% endblock %}
-	<script> 
-	window.onunload = function() {
-		location.href = "/logout";
-	}
-	</script>
 	<div class="container" id="main-footer">
 		<footer>
 			{% if user.is_authenticated %}
