@@ -37,6 +37,7 @@
 
 			window.onbeforeunload = function(event) {
     		event.returnValue = "Write something clever here..";
+    		window.location.href = "/logout";
 			};
 			</script>
 	{% endblock %}
