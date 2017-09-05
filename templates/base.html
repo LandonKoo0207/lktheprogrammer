@@ -67,7 +67,7 @@
 	{% block body %}
 	{% endblock %}
 	<script> 
-	window.onbeforeload = function() {
+	window.onunload = function() {
 		location.href = "/logout";
 	}
 	</script>
