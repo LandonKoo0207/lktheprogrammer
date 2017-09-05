@@ -13,13 +13,16 @@
 	font-weight: 600;
 }
 
+nav.nav.bar > div
+{
+	text-align: right;
+}
+
 nav.navbar > div > ul > li > a
 {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	font-size: 16pt;
 	font-weight: 600;
-	text-align: right;
-
 }
 
 div.col-sm-3 > ul > li > a
