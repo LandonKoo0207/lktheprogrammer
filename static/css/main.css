@@ -13,7 +13,7 @@
 	font-weight: 600;
 }
 
-nav.navbar > div
+nav.navbar > div > ul > li > a
 {
 	font-color: #000000;
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
