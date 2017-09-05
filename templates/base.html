@@ -35,10 +35,11 @@
 		    '//www.tinymce.com/css/codepen.min.css'
 		  ] });
 
-			window.onbeforeunload = function() {
-				alert("hey")
-				location.href = "/logout";
-			};
+			window.onbeforeunload = WindowCloseHanlder;
+			function WindowCloseHanlder()
+			{
+			window.alert('My Window is reloading');
+			}
 			</script>
 	{% endblock %}
 </head>
