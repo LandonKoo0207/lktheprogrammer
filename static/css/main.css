@@ -13,7 +13,7 @@
 	font-weight: 600;
 }
 
-#main-menu
+#main-menu > ul > li
 {
 	font-family: "Century Gothic";
 }
