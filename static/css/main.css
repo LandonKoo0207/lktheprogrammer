@@ -6,6 +6,12 @@
 	background-color: #EEEEEE;
 }
 
+#domain
+{
+	font-size: 20pt;
+	font-family: Arial;
+}
+
 div.col-sm-3 > ul > li > a
 {
 	font-size: 13pt;
