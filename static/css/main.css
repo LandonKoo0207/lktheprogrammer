@@ -15,10 +15,10 @@
 
 nav.navbar > div > ul > li > a
 {
-	font-color: #000000;
-	color: #000000;
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	font-size: 18pt;
 	font-weight: 600;
+
 }
 
 div.col-sm-3 > ul > li > a
