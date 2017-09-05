@@ -17,6 +17,7 @@ nav.navbar
 {
 	color: #000000;
 	font-family: "Century Gothic";
+	font-weight: 600;
 }
 
 div.col-sm-3 > ul > li > a
