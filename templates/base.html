@@ -35,15 +35,14 @@
 		    '//www.tinymce.com/css/codepen.min.css'
 		  ] });
 
-			window.onbeforeunload = WindowCloseHanlder;
 			function WindowCloseHanlder()
 			{
-			window.alert('My Window is reloading');
+				alert('My Window is reloading');
 			}
 			</script>
 	{% endblock %}
 </head>
-<body>
+<body onbeforeunload="WindowCloseHanlder()">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="col-sm-1"></div>
 		<!-- <div class="container" id="main-nav"> -->
