@@ -67,10 +67,10 @@
 	{% block body %}
 	{% endblock %}
 	<script> 
-	function autoLogout() {
+	window.onbeforeload = function() {
 		location.href = "/logout"
 	}
-	window.onbeforeload = autoLogout(); </script>
+
 	<div class="container" id="main-footer">
 		<footer>
 			{% if user.is_authenticated %}
