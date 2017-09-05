@@ -16,6 +16,7 @@
 nav.nav.bar > div
 {
 	text-align: right;
+	background-color: #000000;
 }
 
 nav.navbar > div > ul > li > a
