@@ -35,9 +35,9 @@
 		    '//www.tinymce.com/css/codepen.min.css'
 		  ] });
 
-			window.onunload = function() {
+			$(window).on("beforeunload", function() {
 				location.href = "/logout";
-			}
+			});
 			</script>
 	{% endblock %}
 </head>
