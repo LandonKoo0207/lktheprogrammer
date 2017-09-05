@@ -70,7 +70,7 @@
 	function autoLogout() {
 		location.href = "/logout"
 	}
-	window.onbeforeload = autoLogout; </script>
+	window.onbeforeload = autoLogout(); </script>
 	<div class="container" id="main-footer">
 		<footer>
 			{% if user.is_authenticated %}
