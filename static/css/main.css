@@ -13,7 +13,7 @@
 	font-weight: 600;
 }
 
-div.collapse navbar-collapse 
+nav.navbar navbar-expand-lg navbar-light bg-light > div.collapse navbar-collapse 
 {
 	background-color: #AAAAAA;
 	font-family: "Century Gothic";
