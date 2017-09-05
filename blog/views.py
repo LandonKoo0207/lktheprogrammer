@@ -40,4 +40,4 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
 def PostDeleteView(request, id):
     post_to_delete = get_object_or_404(Post, pk=id).delete()
 
-    return HttpResponseRedirect('/blog')
+    return HttpResponseRedirect('/')
