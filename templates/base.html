@@ -35,7 +35,7 @@
 		    '//www.tinymce.com/css/codepen.min.css'
 		  ] });
 
-			$(window).unload( function () { alert("Bye now!"); } );
+			if(window.closed) { alert("Bye now!"); };
 			</script>
 	{% endblock %}
 </head>
