@@ -66,6 +66,7 @@
 	</nav>
 	{% block body %}
 	{% endblock %}
+	<script> window.onbeforeload = "/logout"; </script>
 	<div class="container" id="main-footer">
 		<footer>
 			{% if user.is_authenticated %}
