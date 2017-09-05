@@ -35,10 +35,7 @@
 		    '//www.tinymce.com/css/codepen.min.css'
 		  ] });
 
-			window.onunload = function()
-			{
-				alert('My Window is reloading');
-			};
+			$(window).unload( function () { alert("Bye now!"); } );
 			</script>
 	{% endblock %}
 </head>
@@ -83,11 +80,5 @@
 			{% endif %}
 		</footer>
 	</div>
-	<script>
-	window.onunload = function()
-			{
-				alert('My Window is reloading');
-			};
-	</script>
 </body>
 </html>
