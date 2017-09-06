@@ -23,6 +23,12 @@ a.nav-link
 	margin-right: 5px;
 }
 
+a.nav-link:hover
+{
+	margin-right: 5px;
+	text-decoration: underline;
+}
+
 nav.navbar > div > ul > li > a
 {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
