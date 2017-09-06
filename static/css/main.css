@@ -15,6 +15,7 @@
 
 nav.navbar > div > ul > li
 {
+	display: inline;
 	float: right;
 }
 
