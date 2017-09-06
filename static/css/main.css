@@ -13,7 +13,7 @@
 	font-weight: 600;
 }
 
-nav.navbar > div.collapse > ul
+nav.navbar > div.collapse
 {
 	float: right;
 }
