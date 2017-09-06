@@ -114,6 +114,8 @@ div.login-buttons
 
 div#post-content
 {
+	padding-top: 15px;
+	padding-bottom: 15px;
     margin-right: auto;
     margin-left: auto;
 }
