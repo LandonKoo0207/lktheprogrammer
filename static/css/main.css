@@ -1,118 +1,121 @@
+/* id only selectors*/
 #blog-sidebar
 {
-	padding-top: 20px;
-	width: 220px;
-	height: 100vh;
-	background-color: #EEEEEE;
+    width: 220px;
+    height: 100vh;
+    padding-top: 20px;
+
+    background-color: #eee;
 }
 
 #domain
 {
-	font-size: 20pt;
-	font-family: Arial;
-	font-weight: 600;
+    font-family: Arial;
+    font-size: 20pt;
+    font-weight: 600;
 }
 
 #post-content
 {
-	margin: auto;
+    margin: auto;
 }
 
+
+#login-btn,
+#cancel-btn
+{
+    width: 137px;
+}
+
+#login-hr
+{
+    width: 300px;
+}
+
+/* regular selectors */
 a.nav-link
 {
-	margin-right: 5px;
+    margin-right: 5px;
 }
 
 a.nav-link:hover
 {
-	margin-right: 5px;
-	text-decoration: underline;
-}
+    margin-right: 5px;
 
-nav.navbar > div > ul > li > a
-{
-	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-	font-size: 16pt;
-	font-weight: 600;
+    text-decoration: underline;
 }
 
 div.col-sm-3 > ul > li > a
 {
-	font-size: 13pt;
-	padding-top: 25px;
-	color: #333333;
-	font-weight: 600;
+    font-size: 13pt;
+    font-weight: 600;
+
+    padding-top: 25px;
+
+    color: #333;
 }
 
 div.col-sm-3 > ul > li > a:hover
 {
-	font-weight: 600;
-	text-decoration: underline;
-}
+    font-weight: 600;
 
-#login-btn, #cancel-btn
-{
-	width: 137px;
-}
-
-#login-hr 
-{
-	width: 300px;
+    text-decoration: underline;
 }
 
 div.admin-login
 {
-	text-align: center;
+    text-align: center;
 }
 
 div.container#main-nav
 {
-	text-align: left;
-/*	margin-left: auto;
+    text-align: left;
+    /*	margin-left: auto;
 	margin-right: auto;*/
 }
 
 div.container#main-footer
 {
-	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 div.fm-contents
 {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 div.fm-title
 {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 div#create-page
 {
-	/*text-align: center;*/
-	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    /*text-align: center;*/
+    margin-left: auto;
 }
 
 div#update-page
 {
-	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 div.login-buttons
 {
-	margin-top: 5px;
-	margin-left: auto;
-	margin-right: auto;
-	pointer-events: auto;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+
+    pointer-events: auto;
 }
 
 div#post-content
 {
-	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*div > form.fm-create
@@ -123,73 +126,87 @@ div#post-content
 
 div > form#update-form
 {
-	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 hr.create-title-separator
 {
-	margin-left: 0px;
-	margin-top: 5px;
-	width: 620px;
+    width: 620px;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+img
+{
+	width: 100%;
 }
 
 input.form-title
 {
-	width: 620px;
-	font-size: 16pt;
-	border-width: 0px 0px 2px 0px;
-	vertical-align: middle;
+    font-size: 16pt;
+
+    width: 620px;
+
+    vertical-align: middle;
+
+    border-width: 0 0 2px 0;
+}
+
+nav.navbar > div > ul > li > a
+{
+    font-family: 'Century Gothic', CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
 }
 
 select#id_category
 {
-	width: 240px;
-	height: 25px;
+    width: 240px;
+    height: 25px;
 }
 
 table#login-table
 {
-	margin: 0px auto;
+    margin: 0 auto;
 }
 
 table.create-category
 {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 table.create-category > td
 {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 textarea.form-contents
 {
-	font-size: 16pt;
+    font-size: 16pt;
 }
 
 td.category-label
 {
-	font-size: 12pt;
+    font-size: 12pt;
 }
 
 td.category-dropdown
 {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 #admin-btn
 {
-	margin-left: 40px;
+    margin-left: 40px;
 }
 
 #admin-label
 {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 
 #create-btn
 {
-	margin-right: 5px;
+    margin-right: 5px;
 }
-
