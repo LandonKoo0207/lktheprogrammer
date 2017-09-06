@@ -13,16 +13,6 @@
 	font-weight: 600;
 }
 
-nav.navbar > div 
-{
-	float: right;
-}
-
-nav.navbar > div > ul > li
-{
-	display: inline;
-}
-
 nav.navbar > div > ul > li > a
 {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
