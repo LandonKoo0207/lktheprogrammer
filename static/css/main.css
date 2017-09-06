@@ -16,7 +16,7 @@
 nav.navbar > div.collapse
 {
 	text-align: right;
-	background-color: #000000;
+	#background-color: #000000;
 }
 
 nav.navbar > div > ul > li > a
