@@ -13,7 +13,7 @@
 	font-weight: 600;
 }
 
-nav.nav.bar > div
+nav.navbar > div.collapse
 {
 	text-align: right;
 	background-color: #000000;
