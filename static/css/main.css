@@ -18,6 +18,11 @@
 	margin: auto;
 }
 
+a.nav-link
+{
+	margin-right: 5px;
+}
+
 nav.navbar > div > ul > li > a
 {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
