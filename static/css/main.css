@@ -13,10 +13,14 @@
 	font-weight: 600;
 }
 
+nav.navbar > div 
+{
+	float: right;
+}
+
 nav.navbar > div > ul > li
 {
 	display: inline;
-	float: right;
 }
 
 nav.navbar > div > ul > li > a
