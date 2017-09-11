@@ -71,7 +71,7 @@ div.content
 a.nav-link
 {
     margin-right: 5px;
-    font-color: #AAAAAA;
+    color: #AAAAAA;
 }
 
 a.nav-link:hover
