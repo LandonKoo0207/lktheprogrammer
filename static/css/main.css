@@ -15,7 +15,7 @@
     font-weight: 600;
 }
 
-#content
+div.content
 {
     float: center;
     width: 800px;
