@@ -17,7 +17,7 @@
 		</ul>
 	</div> -->
 
-	<div id="post-content">
+	<!-- <div id="post-content"> -->
 		{% for post in posts %}
 		<h3>
 			{% if user.is_authenticated %}
@@ -30,7 +30,7 @@
 		{{post.contents|safe}}
 		<hr>
 		{% endfor %}
-	</div>
+	<!-- </div> -->
 
 </div>
 {% endblock %}
