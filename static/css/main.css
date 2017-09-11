@@ -24,6 +24,17 @@ div.content
     max-width: 800px;
 }
 
+@media only screen and (max-width:800px)
+{
+    div.content
+    {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 20pt;
+    }
+}
 
 #login-btn,
 #cancel-btn
