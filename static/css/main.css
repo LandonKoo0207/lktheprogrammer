@@ -41,6 +41,7 @@ div.content
     div.content 
     {
         font-size: 1.5em;
+        max-width: 600px;
     }
 
 }
