@@ -26,7 +26,7 @@ div.content
 
 @media only screen and (max-width:800px)
 {
-    body 
+    p 
     {
         font-size: 500%;
     }
