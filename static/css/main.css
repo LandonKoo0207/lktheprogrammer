@@ -53,7 +53,6 @@ div.col-blog-content-lg
 
 div.col-blog-content-md
 {
-    max-width: 1279px;
     min-width: 800px;
     width: 100%;
 }
