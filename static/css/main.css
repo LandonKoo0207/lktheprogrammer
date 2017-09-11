@@ -17,8 +17,10 @@
 
 div.content
 {
-    float: center;
-    width: 800px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -111,14 +113,6 @@ div.login-buttons
     margin-left: auto;
 
     pointer-events: auto;
-}
-
-div#post-content
-{
-	padding-top: 15px;
-	padding-bottom: 15px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 /*div > form.fm-create
