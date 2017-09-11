@@ -29,6 +29,12 @@
     width: 300px;
 }
 
+#nav-menu-items
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 html, body
 {
     overflow: auto;
