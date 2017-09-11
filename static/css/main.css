@@ -33,10 +33,12 @@ div.content
         font-weight: 600;
     }
 
-    h1, h2, h3, span
+    h1, h2, h3, div.content > p, div.content > p > span
     {
-        font-size: 2em;
+        font-size: 1.5em;
     }
+
+
 }
 
 #login-btn,
