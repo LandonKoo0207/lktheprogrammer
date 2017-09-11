@@ -39,6 +39,7 @@
 	{% endblock %}
 </head>
 <body>
+	<div class="row">
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
 			<a class="navbar-brand" id="domain" href="/">LKTheProgrammer.org</a>
 			<ul class="nav">
@@ -59,10 +60,12 @@
 		<!-- </div> -->
 		<!-- </div> -->
 	</nav>
+	</div>
 	<div class="row">
 	<div class="content">
 	{% block body %}
 	{% endblock %}
+	</div>
 	</div>
 	<div class="container" id="main-footer">
 		<footer>
@@ -74,7 +77,6 @@
 			  <a href="/login" id="admin-label">Admin Login</a>
 			{% endif %}
 		</footer>
-	</div>
 	</div>
 </body>
 </html>
