@@ -29,8 +29,13 @@ div.content
     #domain
     {
         font-family: Arial;
-        font-size: 2em;
+        font-size: 3em;
         font-weight: 600;
+    }
+
+    h1, h2, h3, p > span
+    {
+        font-size: 2em;
     }
 }
 
