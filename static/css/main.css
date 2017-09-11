@@ -26,7 +26,10 @@ div.content
 
 @media only screen and (max-width:800px)
 {
-    font-size: 1.5em;
+    body 
+    {
+        font-size: 1.5em;
+    }
 }
 
 #login-btn,
