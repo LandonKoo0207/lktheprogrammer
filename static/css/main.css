@@ -32,9 +32,7 @@ div.content
         padding-bottom: 15px;
         margin-right: auto;
         margin-left: auto;
-        font-size: 20pt;
-        background-color: lightblue;
-    }
+        font-size: 1.5em;
 }
 
 #login-btn,
