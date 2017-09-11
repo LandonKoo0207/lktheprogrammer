@@ -45,23 +45,6 @@ a.nav-link:hover
     text-decoration: underline;
 }
 
-div.col-blog-content-lg
-{
-    min-width: 1280px;
-    width: 50%;
-}
-
-div.col-blog-content-md
-{
-    min-width: 800px;
-    width: 100%;
-}
-
-/*div.col-blog-content-sm
-{
-    min-width: 1280px;
-}*/
-
 div.col-sm-3 > ul > li > a
 {
     font-size: 13pt;
