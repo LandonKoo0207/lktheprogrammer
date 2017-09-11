@@ -140,7 +140,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'theme': "advanced",
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 10,
-    'width': 1000,
+    'width': 800,
     'height': 700,
 }
 TINYMCE_SPELLCHECKER = True
