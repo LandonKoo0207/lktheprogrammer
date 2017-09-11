@@ -13,8 +13,6 @@
     font-family: Arial;
     font-size: 20pt;
     font-weight: 600;
-    margin-left: 20%;
-    margin-right: 10%;
 }
 
 
@@ -145,6 +143,12 @@ div.login-buttons
     margin-left: auto;
 
     pointer-events: auto;
+}
+
+div.nav-items-whole
+{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*div > form.fm-create
