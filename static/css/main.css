@@ -15,6 +15,24 @@
     font-weight: 600;
 }
 
+
+#login-btn,
+#cancel-btn
+{
+    width: 137px;
+}
+
+#login-hr
+{
+    width: 300px;
+}
+
+html, body
+{
+    overflow: hidden;
+}
+
+/* regular selectors */
 div.content
 {
     padding-top: 15px;
@@ -48,18 +66,6 @@ div.content
 
 }
 
-#login-btn,
-#cancel-btn
-{
-    width: 137px;
-}
-
-#login-hr
-{
-    width: 300px;
-}
-
-/* regular selectors */
 a.nav-link
 {
     margin-right: 5px;
