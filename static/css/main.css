@@ -45,6 +45,11 @@ a.nav-link:hover
     text-decoration: underline;
 }
 
+div.col-lg-6
+{
+    width: 800px;
+}
+
 div.col-sm-3 > ul > li > a
 {
     font-size: 13pt;
