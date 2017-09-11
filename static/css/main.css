@@ -33,7 +33,7 @@ div.content
         font-weight: 600;
     }
 
-    h1, h2, h3, p
+    h1, h2, h3, span
     {
         font-size: 2em;
     }
