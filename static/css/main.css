@@ -33,6 +33,7 @@ div.content
         margin-right: auto;
         margin-left: auto;
         font-size: 2em;
+        background-color: lightblue;
 }
 
 #login-btn,
