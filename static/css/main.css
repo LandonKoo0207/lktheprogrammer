@@ -33,11 +33,15 @@ div.content
         font-weight: 600;
     }
 
-    h1, h2, h3, div.content > p
+    h1, h2, h3
     {
         font-size: 1.5em;
     }
 
+    div.content > p
+    {
+        font-size: 1.5em;
+    }
 
 }
 
