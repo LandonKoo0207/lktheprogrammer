@@ -28,7 +28,7 @@ class Post(models.Model):
         super(Post, self).save(*args, **kwargs)
 
     def get_summary(self):
-        return self.contents[:300]
+        return self.contents[:500]
 
     def get_absolute_url(self):
         return reverse('post_update', kwargs={'pk': self.pk})
