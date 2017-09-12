@@ -82,6 +82,12 @@ div.content
 
 }
 
+a#full-posting-link
+{
+    color: #111111;
+    text-decoration: underline;
+}
+
 a.nav-link
 {
     margin-right: 5px;
