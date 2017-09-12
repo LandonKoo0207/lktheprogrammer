@@ -41,8 +41,7 @@ html, body
 }
 
 /* regular selectors */
-p
-{
+p{
     word-wrap: break-word;
 }
 
