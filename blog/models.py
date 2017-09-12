@@ -27,7 +27,7 @@ class Post(models.Model):
         self.time_updated = datetime.now()
         super(Post, self).save(*args, **kwargs)
 
-    def content_str(self):
+    def get_summary(self):
         return self.contents[:300]
 
     def get_absolute_url(self):

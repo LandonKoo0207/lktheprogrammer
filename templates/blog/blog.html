@@ -23,11 +23,11 @@
 			{% if user.is_authenticated %}
 			<a href="/update/{{post.id}}">{{post.title}}</a>
 			{% else %}
-				{{post.content_str|safe}}
+				{{post.title}}
 			{% endif %}
 		</h3>
 		<br/>
-		{{post.contents|safe}}
+		{{post.get_summary|safe}}
 		<hr>
 		{% endfor %}
 	<!-- </div> -->
