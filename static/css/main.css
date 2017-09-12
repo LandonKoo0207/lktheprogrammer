@@ -171,11 +171,11 @@ div.nav-items-whole
     margin-right: auto;
 }
 
-/*div > form.fm-create
+div > form.fm-create
 {
 	margin-left: auto;
 	margin-right: auto;
-}*/
+}
 
 div > form#update-form
 {
