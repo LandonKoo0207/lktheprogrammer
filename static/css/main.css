@@ -48,6 +48,8 @@ div.content
     margin-right: auto;
     margin-left: auto;
     max-width: 800px;
+
+    word-wrap: break-word;
 }
 
 @media only screen and (max-width:600px)
