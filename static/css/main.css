@@ -73,6 +73,7 @@ div.content
         padding-top: 35%;
         padding-left: 2px;
         padding-right: 2px;
+        word-wrap: break-word;
     }
 
 }
