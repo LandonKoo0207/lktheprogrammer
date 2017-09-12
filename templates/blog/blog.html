@@ -23,7 +23,7 @@
 			{% if user.is_authenticated %}
 			<a href="/update/{{post.id}}">{{post.title}}</a>
 			{% else %}
-				{{post.title}}
+				{{post.get_content_str}}
 			{% endif %}
 		</h3>
 		<br/>
