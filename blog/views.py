@@ -1,6 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import ListView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from .models import Post, Category
@@ -20,6 +20,10 @@ class PostListView(ListView):
     template_name = 'blog/blog.html'
     context_object_name = 'posts'
     queryset = Post.objects.all()
+
+class PostDetailView(DetailView):
+    context_object_name = 'post'
+    template_name_suffix = '_detail'
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     login_url = '/login/'
