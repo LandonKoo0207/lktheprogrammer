@@ -31,7 +31,7 @@
 
 
 	</script>
-	<div id="update-page" class="col-sm-9">
+	<div id="update-page">  <!-- class="col-sm-9"> -->
 		<form id="update-form" action="{% url 'post_update' pk=object.pk %}" method="post" class="fm-create">
 			{% csrf_token %}
 			{{ form.media }}
