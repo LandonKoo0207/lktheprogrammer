@@ -22,8 +22,8 @@ class PostListView(ListView):
     queryset = Post.objects.all()
 
 class PostDetailView(DetailView):
+    template_name='blog/blog_detail.html'
     context_object_name = 'post'
-    template_name_suffix = '_detail'
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     login_url = '/login/'
