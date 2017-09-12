@@ -189,6 +189,11 @@ div > form#update-form
     margin-left: auto;
 }
 
+h1#blog-post-list-title
+{
+    margin-bottom: 30px;
+}
+
 h5#full-posting-link-header
 {
     margin-top: 20px;

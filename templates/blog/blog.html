@@ -19,14 +19,13 @@
 
 	<!-- <div id="post-content"> -->
 		{% for post in posts %}
-		<h1>
+		<h1 id="blog-post-list-title">
 			{% if user.is_authenticated %}
 			<a href="/update/{{post.id}}">{{post.title}}</a>
 			{% else %}
 				{{post.title}}
 			{% endif %}
 		</h1>
-		<br/>
 		{{post.get_summary|safe}}
 		<h5 id="full-posting-link-header"><a href="/post/{{post.slug}}" id="full-posting-link">Read the Full Posting...</a></h5>
 		<hr>
