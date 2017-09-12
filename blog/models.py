@@ -29,7 +29,7 @@ class Post(models.Model):
 
     def content_str(self):
         soup = BeautifulSoup(self.contents, "html.parser")
-        return soup.get_text()
+        return soup.get_text()[:300]
 
     def get_absolute_url(self):
         return reverse('post_update', kwargs={'pk': self.pk})

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+<!-- 	<div class="col-sm-3" id="blog-sidebar">
+		<ul class="nav flex-column">
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">App Building Tutorials</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Algorithms / Data Structures</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Python Tips</a>
+		  </li>
+		</ul>
+	</div> -->
+
+	<!-- <div id="post-content"> -->
+		{% for post in posts %}
+		<h3>
+			{% if user.is_authenticated %}
+			<a href="/update/{{post.id}}">{{post.title}}</a>
+			{% else %}
+				{{post.title}}
+			{% endif %}
+		</h3>
+		<br/>
+		{{post.contents|safe}}
+		<hr>
+		{% endfor %}
+	<!-- </div> -->
+
+{% endblock %}
