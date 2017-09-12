@@ -189,6 +189,11 @@ div > form#update-form
     margin-left: auto;
 }
 
+h5#full-posting-link-header
+{
+    margin-top: 20px;
+}
+
 hr.create-title-separator
 {
     width: 620px;
