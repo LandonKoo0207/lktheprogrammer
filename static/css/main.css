@@ -30,6 +30,11 @@
     width: 300px;
 }
 
+#main-nav
+{
+    margin-bottom: 20px;
+}
+
 #nav-menu-items
 {
     /*margin-left: auto;*/
