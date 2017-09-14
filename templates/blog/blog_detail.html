@@ -20,13 +20,13 @@
 	</div> -->
 
 	<!-- <div id="post-content"> -->
-		<h3 id="blog-post-title">
+		<h2 id="blog-post-title">
 			{% if user.is_authenticated %}
 			<a href="/update/{{post.id}}">{{post.title}}</a>
 			{% else %}
 				{{post.title}}
 			{% endif %}
-		</h3>
+		</h2>
 		<br/>
 		{{post.contents|safe}}
 		<hr>
