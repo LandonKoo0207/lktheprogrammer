@@ -150,6 +150,11 @@ div.fm-title
     margin-top: 15px;
 }
 
+div.jumbotron > h3
+{
+    font-weight: 500;
+}
+
 div#create-page
 {
     margin-right: auto;
