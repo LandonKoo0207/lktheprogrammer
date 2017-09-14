@@ -1,4 +1,9 @@
 /* id only selectors*/
+#about
+{
+    background-color: #FFFFFF
+}
+
 #blog-sidebar
 {
     width: 220px;
@@ -43,17 +48,6 @@ html, body
 
 /* regular selectors */
 p{
-    word-wrap: break-word;
-}
-
-div.content
-{
-    padding-top: 100px;
-    padding-bottom: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 800px;
-
     word-wrap: break-word;
 }
 
@@ -138,6 +132,17 @@ div.container#main-footer
 {
     margin-right: auto;
     margin-left: auto;
+}
+
+div.content
+{
+    padding-top: 100px;
+    padding-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+
+    word-wrap: break-word;
 }
 
 div.fm-contents
