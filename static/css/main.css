@@ -218,6 +218,12 @@ img
 	max-width: 100%;
 }
 
+img.contact-icon
+{
+    width: 20px;
+    height: 20px;
+}
+
 input.form-title
 {
     font-size: 16pt;
