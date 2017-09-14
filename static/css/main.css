@@ -243,6 +243,11 @@ nav.navbar > div > ul > li > a
     font-weight: 600;
 }
 
+p.contact-icons > a:
+{
+    text-decoration: none;
+}
+
 select#id_category
 {
     width: 240px;
