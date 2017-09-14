@@ -11,6 +11,9 @@ def index(request):
 def about(request):
     return render(request, 'blog/about.html')
 
+def contact(request):
+    return render(request, 'blog/contact.html')
+
 class CategoryListView(ListView):
     template_name='blog/post_create.html'
     context_object_name = 'categories'
