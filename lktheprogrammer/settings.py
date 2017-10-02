@@ -143,7 +143,7 @@ TINYMCE_DEFAULT_CONFIG = {
                '| bullist numlist | outdent indent | table | link image | codesample | preview code',
     'contextmenu': 'formats | link image',
     'menubar': False,
-    'inline': False,
+    'inline': True,
     'statusbar': True,
     'height': 360,
 }
