@@ -16,10 +16,11 @@
 	{{ block.super }}
 	  <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=ea9sbdtgpuf0333tzrauaqczevyysdpowp7qbogtmv7f6n0c"></script>
 	  <!-- <script src="{% static 'tinymce/js/tinymce/tinymce.min.js' %}"></script> -->
-  	<script>tinymce.init({ inline: true,
+  	<script>tinymce.init({ 
 		  selector: 'div.fm-contents',
 		  height: 500,
 		  theme: 'inlite',
+		  inline: true/*,
 		  plugins: [
 		    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
 		    'searchreplace wordcount visualblocks visualchars code fullscreen',
@@ -36,7 +37,7 @@
 		  content_css: [
 		    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
 		    '//www.tinymce.com/css/codepen.min.css'
-		  ] });
+		  ]*/ });
 
 			</script>
 	{% endblock %}
