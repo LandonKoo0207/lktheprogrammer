@@ -145,7 +145,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': False,
     'inline': False,
     'statusbar': True,
-    'height': 360,
+    'height': 700,
 }
 #TINYMCE_SPELLCHECKER = True
 #TINYMCE_COMPRESSOR = True
