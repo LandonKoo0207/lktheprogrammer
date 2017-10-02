@@ -135,13 +135,17 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = '/'
 
-TINYMCE_DEFAULT_CONFIG = {
-    'theme': "modern",
-    'plugins': "link table paste",
-    'cleanup_on_startup': True,
-    'custom_undo_redo_levels': 10,
-    'width': 800,
-    'height': 700,
+TINYMCE_DEFAULT_CONFIG DEFAULT = {
+    'selector': 'textarea',
+    'theme': 'modern',
+    'plugins': 'link image preview codesample contextmenu table code lists',
+    'toolbar1': 'bold italic underline | alignleft aligncenter alignright alignjustify '
+               '| bullist numlist | outdent indent | table | link image | codesample | preview code',
+    'contextmenu': 'formats | link image',
+    'menubar': False,
+    'inline': False,
+    'statusbar': True,
+    'height': 360,
 }
 #TINYMCE_SPELLCHECKER = True
 #TINYMCE_COMPRESSOR = True
