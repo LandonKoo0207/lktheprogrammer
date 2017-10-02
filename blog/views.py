@@ -5,14 +5,6 @@ from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from .models import Post, Category
 
-def error_404(request):
-    data = {}
-    return render(request, 'blog/error_404.html', data)
-
-def error_500(request):
-    data = {}
-    return render(request, 'blog/error_500.html', data)
-
 def index(request):
     return render(request, 'index.html')
 
