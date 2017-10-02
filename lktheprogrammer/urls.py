@@ -17,7 +17,7 @@ from django.conf.urls import url, include, handler404, handler500
 from django.contrib import admin
 from django.contrib.auth import views
 from blog.forms import LoginForm
-from blog import blog_views
+from blog import views as blog_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
