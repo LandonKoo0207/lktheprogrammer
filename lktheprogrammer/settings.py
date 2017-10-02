@@ -141,9 +141,9 @@ TINYMCE_DEFAULT_CONFIG = {
     'plugins': 'link image preview codesample contextmenu table code lists',
     'toolbar1': 'bold italic underline | alignleft aligncenter alignright alignjustify '
                '| bullist numlist | outdent indent | table | link image | codesample | preview code',
-    'contextmenu': 'formats | link image',
+    'contextmenu': 'formats | link image code codesample ',
     'menubar': False,
-    'inline': False,
+    'inline': True,
     'statusbar': True,
     'height': 360,
 }
