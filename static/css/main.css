@@ -32,7 +32,7 @@
 #error-page-redirect
 {
     margin-top: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 #login-btn,
@@ -221,16 +221,15 @@ h1#blog-post-list-title
     margin-bottom: 30px;
 }
 
-h1.error-title
+h2.error-title
 {
-    margin-top: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 h3.error-message
 {
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 h5#full-posting-link-header
