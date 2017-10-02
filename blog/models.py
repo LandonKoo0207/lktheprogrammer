@@ -3,7 +3,7 @@ from django.db import models
 from django.utils.timezone import now
 from django.utils.text import slugify
 from datetime import datetime
-from tinymce.models import HTMLField
+from tinymce import HTMLField
 
 class Category(models.Model):
     id = models.AutoField(primary_key=True)
