@@ -135,7 +135,7 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = '/'
 
-TINYMCE_DEFAULT_CONFIG DEFAULT = {
+TINYMCE_DEFAULT_CONFIG = {
     'selector': 'textarea',
     'theme': 'modern',
     'plugins': 'link image preview codesample contextmenu table code lists',
