@@ -25,7 +25,7 @@ SECRET_KEY = 'YOUR_SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['128.199.112.31', 'lktheprogrammer.org', 'test.lktheprogrammer.org', '*']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,11 +80,8 @@ WSGI_APPLICATION = 'lktheprogrammer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lktheprogrammer_prod',
-        'USER': 'landon',
-        'PASSWORD': 'kpk47503#',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': '',
+        'USER': '',
     }
 }
 
