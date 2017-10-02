@@ -17,6 +17,7 @@ from django.conf.urls import url, include, handler404, handler500
 from django.contrib import admin
 from django.contrib.auth import views
 from blog.forms import LoginForm
+from blog import blog_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -26,5 +27,5 @@ urlpatterns = [
     url(r'^tinymce/', include('tinymce.urls')),
 ]
 
-handler404 = blog.views.error_404
-handler500 = blog.views.error_500
+handler404 = blog_views.error_404
+handler500 = blog_views.error_500
