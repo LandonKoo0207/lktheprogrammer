@@ -137,13 +137,13 @@ LOGIN_REDIRECT_URL = '/'
 
 TINYMCE_DEFAULT_CONFIG = {
     'selector': 'textarea',
-    'theme': 'inlite',
+    'theme': 'modern',
     'plugins': 'link image preview codesample contextmenu table code lists',
     'toolbar1': 'bold italic underline | alignleft aligncenter alignright alignjustify '
                '| bullist numlist | outdent indent | table | link image | codesample | preview code',
     'contextmenu': 'formats | link image',
     'menubar': False,
-    'inline': True,
+    'inline': False,
     'statusbar': True,
     'height': 360,
 }
