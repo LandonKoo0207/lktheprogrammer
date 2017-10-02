@@ -18,7 +18,6 @@
 	  <script src="{% static 'tinymce/js/tinymce/tinymce.min.js' %}"></script>
   	<script>tinymce.init({ 
 		  selector: 'div.fm-contents',
-		  inline: true,
 		  plugins: [
 		    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
 		    'searchreplace wordcount visualblocks visualchars code fullscreen',
@@ -27,6 +26,7 @@
 		  ],
 		  toolbar1: 'newdocument | print preview searchreplace | spellchecker a11ycheck | undo redo | insert | bullist numlist outdent indent |   visualblocks advcode fullscreen help',
 		  toolbar2: 'styleselect | fontselect | fontsizeselect | bold italic underline  | alignleft aligncenter alignright alignjustify | forecolor backcolor | removeformat',
+		  inline: true,
 		  image_advtab: true,
 		  templates: [
 		    { title: 'Test template 1', content: 'Test 1' },
