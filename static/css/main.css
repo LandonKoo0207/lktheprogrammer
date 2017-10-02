@@ -29,6 +29,11 @@
 /*    margin-right: auto;*/
 }
 
+#error-page-redirect
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 #login-btn,
 #cancel-btn
@@ -214,6 +219,17 @@ div > form#update-form
 h1#blog-post-list-title
 {
     margin-bottom: 30px;
+}
+
+h2.error-title
+{
+    margin-bottom: 10px;
+}
+
+h3.error-message
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h5#full-posting-link-header
