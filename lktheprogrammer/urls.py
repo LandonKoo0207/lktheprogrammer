@@ -26,5 +26,5 @@ urlpatterns = [
     url(r'^tinymce/', include('tinymce.urls')),
 ]
 
-#handler404 = blog.views.error_404
-#handler500 = blog.views.error_500
+handler404 = blog.views.error_404
+handler500 = blog.views.error_500
