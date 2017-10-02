@@ -16,7 +16,7 @@ class Post(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True)
-    contents = HTMLField('Content')
+    contents = HTMLField()
     category = models.ForeignKey(Category)
     time_updated = models.DateTimeField(default=now)
 
