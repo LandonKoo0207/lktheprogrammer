@@ -3,7 +3,7 @@ from django.db import models
 from django.utils.timezone import now
 from django.utils.text import slugify
 from datetime import datetime
-from tinymce.models import HTMLField
+from tinymce import HTMLField
 
 class Category(models.Model):
     id = models.AutoField(primary_key=True)
@@ -16,7 +16,7 @@ class Post(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True)
-    contents = HTMLField()
+    contents = HTMLField('Content')
     category = models.ForeignKey(Category)
     time_updated = models.DateTimeField(default=now)
 
