@@ -25,7 +25,7 @@ SECRET_KEY = 'YOUR_SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['128.199.112.31', 'lktheprogrammer.org', 'test.lktheprogrammer.org']
+ALLOWED_HOSTS = ['128.199.112.31', 'lktheprogrammer.org', 'test.lktheprogrammer.org', '*']
 
 
 # Application definition
