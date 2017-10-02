@@ -18,24 +18,16 @@
 	  <script src="{% static 'tinymce/js/tinymce/tinymce.min.js' %}"></script>
   	<script>tinymce.init({ 
 		  selector: '.fm-contents',
-		  plugins: [
-		    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-		    'searchreplace wordcount visualblocks visualchars code fullscreen',
-		    'insertdatetime media nonbreaking save table contextmenu directionality',
-		    'template paste textcolor colorpicker textpattern imagetools codesample toc help emoticons hr'
-		  ],
-		  toolbar1: 'newdocument | print preview searchreplace | spellchecker a11ycheck | undo redo | insert | bullist numlist outdent indent |   visualblocks advcode fullscreen help',
-		  toolbar2: 'styleselect | fontselect | fontsizeselect | bold italic underline  | alignleft aligncenter alignright alignjustify | forecolor backcolor | removeformat',
+		  theme: 'inlite',
+		  plugins: 'image media table link paste contextmenu textpattern autolink codesample',
+		  insert_toolbar: 'quickimage quicktable media codesample',
+		  selection_toolbar: 'bold italic | quicklink h2 h3 blockquote',
 		  inline: true,
-		  image_advtab: true,
-		  templates: [
-		    { title: 'Test template 1', content: 'Test 1' },
-		    { title: 'Test template 2', content: 'Test 2' }
-		  ],
+		  paste_data_images: true,
 		  content_css: [
 		    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
-		    '//www.tinymce.com/css/codepen.min.css'
-		  ] });
+		    '//www.tinymce.com/css/codepen.min.css']
+});
 
 			</script>
 	{% endblock %}
