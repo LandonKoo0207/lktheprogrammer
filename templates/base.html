@@ -16,10 +16,11 @@
 	{{ block.super }}
 	  <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=ea9sbdtgpuf0333tzrauaqczevyysdpowp7qbogtmv7f6n0c"></script>
 	  <!-- <script src="{% static 'tinymce/js/tinymce/tinymce.min.js' %}"></script> -->
-  	<script>tinymce.init({ selector: '#id_contents',
+  	<script>tinymce.init({ 
+		  inline: true,
+		  selector: '#id_contents',
 		  height: 500,
 		  theme: 'modern',
-		  inline: true,
 		  fromTextarea: true,
 		  plugins: [
 		    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
