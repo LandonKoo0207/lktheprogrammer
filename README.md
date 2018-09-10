@@ -1,1 +1,1 @@
-LKTheProgrammer.org source code
+Simple Personal Blog built in Python / Django
